@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Work Hours Logger</title>
+</head>
+<body>
+  <h1>Work Hours Logger</h1>
+  
+  <button onclick="logWorkHours('Check In')">Check In</button>
+  <button onclick="logWorkHours('Check Out')">Check Out</button>
+
+  <script>
+
+  function logWorkHours(action) {
+    var xhr = new XMLHttpRequest();
+    
+    // Replace 'WEB_APP_URL' with your web app URL
+    xhr.open('GET', 'WEB_APP_URL?action=https://script.google.com/a/macros/swissnex.org/s/AKfycbzrGnowinOZk9KA6trunAIz2YVsERrT2DnMfF-d1OFVriDxJ97ONtC2V3idU0nI_r506Q/exec' + action);
+    xhr.send();
+  }
+
+  </script>
+
+</body>
+</html>
+
+
+
